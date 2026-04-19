@@ -19,4 +19,8 @@ class Personaje:
     def curar_pj(self, cantidad):
         self.vida += cantidad
         print(f"Vida actual: {self.vida}")
-        
+    
+    def get_personaje_vida(self):
+        return self.vida
+    
+  
