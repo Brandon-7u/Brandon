@@ -23,11 +23,13 @@ class Personaje:
     def get_personaje_vida(self):
         return self.vida
     
-    def get_personaje_vida(self):
-        return self.vida
-    
     def set_personaje_vida(self, nuevodato):
         self.vida = nuevodato
 
-    def get_curar_pj(self, nuevodato_curar):
-        self.vida = nuevodato_curar}
+    def get_curar_pj(self):
+        return self.vida
+    
+    def set_curar_pj(self, nuevodato_curar):
+        self.vida = nuevodato_curar
+        
+ 
