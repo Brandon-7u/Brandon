@@ -31,5 +31,11 @@ class Personaje:
     
     def set_curar_pj(self, nuevodato_curar):
         self.vida = nuevodato_curar
-        
- 
+
+
+pj1 = Personaje("Juan el mago", 100, 100, "Magia", "Mago")
+pj1.info_personaje()
+print(pj1.personaje_vivo())
+
+pj1.set_personaje_vida(40)
+print(pj1.get_personaje_vida())
