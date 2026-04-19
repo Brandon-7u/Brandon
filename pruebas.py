@@ -28,3 +28,6 @@ class Personaje:
     
     def set_personaje_vida(self, nuevodato):
         self.vida = nuevodato
+
+    def get_curar_pj(self, nuevodato_curar):
+        self.vida = nuevodato_curar}
