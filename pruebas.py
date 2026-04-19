@@ -12,3 +12,7 @@ class Personaje:
         print (f"Ataque:{self.ataque} ")
         print (f"Tipo de personaje:{self.tipo_personaje} ")
         print (f"rol:{self.rol} ")
+
+    def personaje_vivo(self):
+        return self.vida > 0
+    
