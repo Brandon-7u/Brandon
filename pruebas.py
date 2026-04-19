@@ -1,1 +1,2 @@
-print("Hola")
+class Personaje:
+    pass
