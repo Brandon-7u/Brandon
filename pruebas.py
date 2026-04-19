@@ -23,4 +23,8 @@ class Personaje:
     def get_personaje_vida(self):
         return self.vida
     
-  
+    def get_personaje_vida(self):
+        return self.vida
+    
+    def set_personaje_vida(self, nuevodato):
+        self.vida = nuevodato
