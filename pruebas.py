@@ -1,36 +1,36 @@
 class Personaje:
     def __init__(self, nombre, vida, ataque, tipo_personaje, rol):
-        self.nombre = nombre
-        self.vida = vida
-        self.ataque = ataque
-        self.tipo_personaje = tipo_personaje
-        self.rol = rol
+        self.__nombre = nombre
+        self.__vida = vida
+        self.__ataque = ataque
+        self.__tipo_personaje = tipo_personaje
+        self.__rol = rol
     
     def info_personaje(self):
-        print (f"Nombre:{self.nombre} ")
-        print (f"Vida:{self.vida} ")
-        print (f"Ataque:{self.ataque} ")
-        print (f"Tipo de personaje:{self.tipo_personaje} ")
-        print (f"rol:{self.rol} ")
+        print (f"Nombre:{self.__nombre} ")
+        print (f"Vida:{self.__vida} ")
+        print (f"Ataque:{self.__ataque} ")
+        print (f"Tipo de personaje:{self.__tipo_personaje} ")
+        print (f"rol:{self.__rol} ")
 
     def personaje_vivo(self):
-        return self.vida > 0
+        return self.__vida > 0
     
     def curar_pj(self, cantidad):
-        self.vida += cantidad
-        print(f"Vida actual: {self.vida}")
+        self.__vida += cantidad
+        print(f"Vida actual: {self.__vida}")
     
     def get_personaje_vida(self):
-        return self.vida
+        return self.__vida
     
     def set_personaje_vida(self, nuevodato):
-        self.vida = nuevodato
+        self.__vida = nuevodato
 
     def get_curar_pj(self):
-        return self.vida
+        return self.__vida
     
     def set_curar_pj(self, nuevodato_curar):
-        self.vida = nuevodato_curar
+        self.__vida = nuevodato_curar
 
 
 pj1 = Personaje("Juan el mago", 100, 100, "Magia", "Mago")
